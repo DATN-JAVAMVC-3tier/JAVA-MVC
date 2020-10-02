@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	<!-- Any urls that are excluded will never be decorated by Sitemesh -->
+	<excludes>
+		<pattern>/api*</pattern>
+	</excludes>
+	<excludes>
+		<pattern>/bill*</pattern>
+	</excludes>
+	<!-- apply Sitemesh default template -->
+	<decorator name="log-form" page="web-log.jsp">
+		<pattern>/logform*</pattern>
+	</decorator>
+	<decorator name="admin-table" page="admin-table.jsp">
+		<pattern>/admin-table-*</pattern>
+	</decorator>
+	<decorator name="admin-statistical"
+		page="admin-statistical.jsp">
+		<pattern>/admin-statistical*</pattern>
+	</decorator>
+	<decorator name="admin" page="admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	<decorator name="manager" page="manager.jsp">
+		<pattern>/quanly*</pattern>
+	</decorator>
+	<decorator name="ship" page="shipper.jsp">
+		<pattern>/ship*</pattern>
+	</decorator>
+	<decorator name="posts" page="posts.jsp">
+		<pattern>/posts*</pattern>
+	</decorator>
+	<decorator name="nobanner" page="webnobanner.jsp">
+		<pattern>/detailOrder</pattern>
+	</decorator>
+	<decorator name="nobanner" page="webnobanner.jsp">
+		<pattern>/contact</pattern>
+	</decorator>
+	<decorator name="web" page="web.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+
+</decorators>
